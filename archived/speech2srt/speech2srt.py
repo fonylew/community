@@ -13,9 +13,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import os
 import srt
 from google.cloud import speech
 
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="credentials.json"
 
 def long_running_recognize(args):
     """
